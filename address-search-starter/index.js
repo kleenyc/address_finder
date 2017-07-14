@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducers';
-import AddressFinder from './components/AddressFinder';
+import AddressFinderApp from './components/AddressFinderApp';
 
 
 const store = createStore(reducer,
@@ -17,7 +17,7 @@ const store = createStore(reducer,
 
 const render = () => ReactDOM.render(
 	<Provider store={store}>
-	  <AddressFinder/>
+	  <AddressFinderApp/>
 	</Provider>,
   document.getElementById('root')
 );
